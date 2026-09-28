@@ -1,0 +1,6 @@
+{
+  "name": "Hệ Thống Tài Liệu LOL37 Nghệ An",
+  "description": "Cổng quản lý và tra cứu tài liệu nội bộ LOL37 Nghệ An - Chia sẻ tri thức, đồng hành phát triển, vững bước tương lai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
