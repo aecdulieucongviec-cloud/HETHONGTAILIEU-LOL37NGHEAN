@@ -48,7 +48,7 @@ export const UserManagementView: React.FC = () => {
   }[] = [
     {
       role: 'ADMIN',
-      name: 'Tổng Giám Đốc (Admin)',
+      name: 'TỔNG BIÊN TẬP (ADMIN)',
       view: true,
       download: true,
       upload: true,

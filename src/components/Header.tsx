@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
   const getRoleLabel = (role: UserRole) => {
     switch (role) {
       case 'ADMIN':
-        return 'Tổng Giám Đốc (Admin)';
+        return 'TỔNG BIÊN TẬP (ADMIN)';
       case 'DOCUMENT_CONTROLLER':
         return 'Doc Controller (Quản trị tài liệu)';
       case 'DEPARTMENT_MANAGER':

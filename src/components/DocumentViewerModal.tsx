@@ -235,8 +235,8 @@ export const DocumentViewerModal: React.FC = () => {
                       </div>
                       <div>
                         <div className="italic text-slate-400 mb-1">(Đã ký số)</div>
-                        <div className="font-bold">{selectedDocument.approver || 'Nguyễn Văn Hải'}</div>
-                        <div className="text-[10px] text-slate-500">Tổng Giám Đốc</div>
+                        <div className="font-bold">{selectedDocument.approver || 'NGUYỄN THANH TÙNG'}</div>
+                        <div className="text-[10px] text-slate-500">TỔNG BIÊN TẬP</div>
                       </div>
                     </div>
                   </div>

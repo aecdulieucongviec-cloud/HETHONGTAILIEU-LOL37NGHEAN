@@ -131,7 +131,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // Entities
   const [documents, setDocuments] = useState<DocumentItem[]>(() => {
     try {
-      const saved = localStorage.getItem('lol37_docs_v2');
+      const saved = localStorage.getItem('lol37_docs_v3');
       return saved ? JSON.parse(saved) : INITIAL_DOCUMENTS;
     } catch {
       return INITIAL_DOCUMENTS;
@@ -168,7 +168,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const [auditLogs, setAuditLogs] = useState<AuditLogItem[]>(() => {
     try {
-      const saved = localStorage.getItem('lol37_audit_v2');
+      const saved = localStorage.getItem('lol37_audit_v3');
       return saved ? JSON.parse(saved) : INITIAL_AUDIT_LOGS;
     } catch {
       return INITIAL_AUDIT_LOGS;
@@ -180,7 +180,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // Sync to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem('lol37_docs_v2', JSON.stringify(documents));
+      localStorage.setItem('lol37_docs_v3', JSON.stringify(documents));
     } catch (e) {
       console.error(e);
     }
@@ -204,7 +204,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   useEffect(() => {
     try {
-      localStorage.setItem('lol37_audit_v2', JSON.stringify(auditLogs));
+      localStorage.setItem('lol37_audit_v3', JSON.stringify(auditLogs));
     } catch (e) {
       console.error(e);
     }
